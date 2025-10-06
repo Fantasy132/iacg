@@ -1,5 +1,7 @@
 # Sakura社区 (Anime Community)
 
+可以直接通过 https://sakura-ybz.xyz 来访问成品
+
 ![二次元风格](https://img.shields.io/badge/风格-二次元-pink)
 ![React](https://img.shields.io/badge/前端-React-blue)
 ![Express](https://img.shields.io/badge/后端-Express-yellow)
