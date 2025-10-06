@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #fff0f5 0%, #ffe6f2 100%);
+  background-attachment: fixed;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.main-content {
+  min-height: calc(100vh - 70px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.unauthorized {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.unauthorized h2 {
+  color: #ff69b4;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.unauthorized p {
+  color: #888;
+  font-size: 18px;
+}
+
+/* 卡片样式 */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  border: 1px solid rgba(255, 182, 193, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 105, 180, 0.3);
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+/* 分隔线 */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffb6c1, transparent);
+  margin: 20px 0;
+}

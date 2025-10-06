@@ -1,0 +1,313 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 10px;
+  background: linear-gradient(135deg, #fff0f5 0%, #ffe6f2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,182,193,0.1) 0%, transparent 70%);
+  transform: rotate(30deg);
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-header h1 {
+  color: #ff69b4;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.register-header h1::after {
+  content: "🌸";
+  position: absolute;
+  right: -40px;
+  top: -5px;
+  font-size: 1.8rem;
+}
+
+.register-header p {
+  color: #ff99cc;
+  font-size: 1.1rem;
+}
+
+.register-form {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ffb6c1;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 105, 180, 0.4);
+}
+
+.register-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #ff69b4, #ff1493);
+}
+
+.form-section {
+  margin-bottom: 15px;
+}
+
+.form-section:last-child {
+  margin-bottom: 0;
+}
+
+.form-actions {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-actions .btn {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  min-width: 150px;
+}
+
+.submit-error {
+  background-color: rgba(255, 228, 225, 0.9);
+  border: 1px solid #ff69b4;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #ffd6e0;
+}
+
+.form-footer p {
+  color: #888;
+  font-size: 1rem;
+}
+
+.form-footer a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+  color: #ff1493;
+}
+
+/* 注册成功页面样式 */
+.registration-success {
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ffb6c1;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-success::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #ff69b4, #ff1493);
+}
+
+.registration-success h2 {
+  color: #ff69b4;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.registration-success h2::after {
+  content: "🌸";
+  position: absolute;
+  right: -40px;
+  top: -5px;
+  font-size: 1.5rem;
+}
+
+.registration-success p {
+  color: #ff99cc;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.registration-success .btn {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  min-width: 180px;
+  margin-bottom: 20px;
+}
+
+.login-link {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ffd6e0;
+}
+
+.login-link a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+  color: #ff1493;
+}
+
+/* 装饰元素 */
+.register-form::after,
+.registration-success::after {
+  content: "✦";
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: #ffb6c1;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 8px;
+  }
+  
+  .register-form,
+  .registration-success {
+    padding: 25px 20px;
+  }
+  
+  .register-header {
+    margin-bottom: 15px;
+  }
+  
+  .form-section {
+    margin-bottom: 12px;
+  }
+  
+  .form-actions {
+    margin-top: 12px;
+  }
+  
+  .registration-success h2 {
+    font-size: 1.7rem;
+  }
+  
+  .registration-success p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-wrapper {
+    max-width: 100%;
+  }
+  
+  .register-form,
+  .registration-success {
+    padding: 20px 15px;
+  }
+  
+  .register-header {
+    margin-bottom: 15px;
+  }
+  
+  .register-header h1,
+  .registration-success h2 {
+    font-size: 1.8rem;
+  }
+  
+  .form-section {
+    margin-bottom: 10px;
+  }
+  
+  .form-actions {
+    margin-top: 10px;
+  }
+  
+  .form-actions .btn,
+  .registration-success .btn {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .registration-success h2::after {
+    right: -30px;
+    font-size: 1.2rem;
+  }
+}

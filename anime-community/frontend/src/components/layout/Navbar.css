@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 182, 193, 0.3);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-decoration: none;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
+  margin-right: auto; /* 将品牌标题推向最左侧 */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0 20px; /* 增加与品牌标题和用户信息的间距 */
+}
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #888;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  color: #ff69b4;
+  background: rgba(255, 182, 193, 0.2);
+}
+
+.nav-link.active {
+  color: #ff1493;
+  background: rgba(255, 182, 193, 0.3);
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto; /* 将用户信息推向最右侧 */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info span {
+  font-weight: 500;
+  color: #ff69b4;
+}
+
+.btn-logout {
+  background: transparent;
+  color: #ff69b4;
+  border: 2px solid #ff69b4;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-logout:hover {
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  color: white;
+  border-color: #ff69b4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+}
+
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* 添加装饰性元素 */
+.navbar::before {
+  content: "✦";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffb6c1;
+  font-size: 20px;
+}
+
+.navbar::after {
+  content: "✦";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffb6c1;
+  font-size: 20px;
+}
+
+.admin-link {
+  background: rgba(255, 182, 193, 0.2);
+  padding: 6px 12px;
+  border-radius: 15px;
+}
+
+.admin-link:hover {
+  background: rgba(255, 105, 180, 0.3);
+}

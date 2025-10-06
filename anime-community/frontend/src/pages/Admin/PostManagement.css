@@ -1,0 +1,53 @@
+.post-management {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-management h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.posts-table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.posts-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.posts-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.post-title-cell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}

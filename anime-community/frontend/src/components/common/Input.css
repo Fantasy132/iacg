@@ -1,0 +1,111 @@
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ff69b4;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 10px;
+}
+
+.input-label::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffb6c1;
+  font-size: 0.9rem;
+}
+
+.required {
+  color: #ff4500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #ffb6c1;
+  border-radius: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: inherit;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff69b4;
+  box-shadow: 0 0 0 4px rgba(255, 105, 180, 0.3), inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  transform: translateY(-2px);
+}
+
+.input-field::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.input-error {
+  border-color: #ff4500;
+}
+
+.input-error:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 0 4px rgba(255, 69, 0, 0.3), inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #ff4500;
+  font-size: 14px;
+  margin-top: 8px;
+  display: block;
+  font-weight: 500;
+  padding-left: 5px;
+  position: relative;
+}
+
+.error-message::before {
+  content: "⚠";
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+/* 文本域样式 */
+textarea.input-field {
+  min-height: 130px;
+  resize: vertical;
+  font-family: inherit;
+  border-radius: 15px;
+}
+
+/* 动画效果 */
+.input-field {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:focus {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .input-field {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+  
+  .input-label {
+    font-size: 1rem;
+  }
+  
+  .error-message {
+    font-size: 13px;
+  }
+}
